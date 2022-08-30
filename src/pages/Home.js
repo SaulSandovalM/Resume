@@ -1,4 +1,5 @@
 import React from "react";
+import AdSense from "react-adsense";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
 import Header from "../components/Header";
@@ -15,6 +16,7 @@ export default function Home() {
       {/* <Certifications /> */}
       <Skills />
       <Education />
+      <AdSense.Google client="ca-pub-4297282347356771" slot="1797494644" />
     </div>
   );
 }
