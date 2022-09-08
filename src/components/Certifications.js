@@ -7,12 +7,12 @@ import android from "../assets/android.png";
 export default function Certifications() {
   return (
     <Grid container spacing={2} sx={{ pt: 10 }} alignItems="stretch">
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6} lg={6}>
         <Typography variant="h3" color="white">
           Certificaciones
         </Typography>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6} lg={6}>
         <Box
           sx={{
             display: "flex",
@@ -24,7 +24,7 @@ export default function Certifications() {
           <Divider sx={{ background: "#c9d1d9", width: "100%" }} />
         </Box>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6} lg={6}>
         <Card>
           <CardMedia
             component="img"
@@ -34,7 +34,7 @@ export default function Certifications() {
           />
         </Card>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6} lg={6}>
         <Card>
           <CardMedia
             component="img"
@@ -44,7 +44,7 @@ export default function Certifications() {
           />
         </Card>
       </Grid>
-      <Grid item xs={6}>
+      <Grid item xs={12} md={6} lg={6}>
         <Card>
           <CardMedia
             component="img"
