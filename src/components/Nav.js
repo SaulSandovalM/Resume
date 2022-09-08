@@ -35,14 +35,14 @@ export default function Nav(props) {
       </Link>
       <Divider />
       <List>
-        <ListItem disablePadding>
+        {/* <ListItem disablePadding>
           <ListItemButton
             href="https://www.youtube.com/channel/UCrwAka8IMVy1G5-3vM6dFjw"
             sx={{ textDecoration: "none", textAlign: "center" }}
           >
             <ListItemText primary="Youtube" />
           </ListItemButton>
-        </ListItem>
+        </ListItem> */}
         <ListItem disablePadding>
           <ListItemButton
             href="https://twitter.com/SaulSandovalM"
@@ -86,14 +86,14 @@ export default function Nav(props) {
           >
             Saul Sandoval
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          {/* <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button
               href="https://www.youtube.com/channel/UCrwAka8IMVy1G5-3vM6dFjw"
               sx={{ color: "#fff" }}
             >
               Youtube
             </Button>
-          </Box>
+          </Box> */}
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button
               href="https://twitter.com/SaulSandovalM"
