@@ -7,7 +7,11 @@ import {
   Grid,
   Typography,
   Box,
+  CardActions,
+  IconButton,
 } from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
 import unity from "../assets/unity.jpg";
 import react from "../assets/react.png";
 import firebase from "../assets/firebase.png";
@@ -52,6 +56,19 @@ export default function Projects() {
               multiplataforma de Unity.
             </Typography>
           </CardContent>
+          <CardActions
+            disableSpacing
+            sx={{
+              background: "#0e1117",
+            }}
+          >
+            <IconButton href="https://github.com/SaulSandovalM/">
+              <GitHubIcon sx={{ color: "white" }} />
+            </IconButton>
+            <IconButton href="https://github.com/SaulSandovalM/">
+              <LanguageIcon sx={{ color: "white" }} />
+            </IconButton>
+          </CardActions>
         </Card>
       </Grid>
       <Grid item xs={12} md={6} lg={4}>
