@@ -45,6 +45,22 @@ export default function Nav(props) {
         </ListItem> */}
         <ListItem disablePadding>
           <ListItemButton
+            href="https://www.facebook.com/SaulSandovalM"
+            sx={{ textDecoration: "none", textAlign: "center" }}
+          >
+            <ListItemText primary="Facebook" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton
+            href="https://www.instagram.com/saulsandovalm/"
+            sx={{ textDecoration: "none", textAlign: "center" }}
+          >
+            <ListItemText primary="Instagram" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton
             href="https://twitter.com/SaulSandovalM"
             sx={{ textDecoration: "none", textAlign: "center" }}
           >
@@ -94,6 +110,22 @@ export default function Nav(props) {
               Youtube
             </Button>
           </Box> */}
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Button
+              href="https://www.facebook.com/SaulSandovalM"
+              sx={{ color: "#fff" }}
+            >
+              Facebook
+            </Button>
+          </Box>
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Button
+              href="https://www.instagram.com/saulsandovalm/"
+              sx={{ color: "#fff" }}
+            >
+              Instagram
+            </Button>
+          </Box>
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button
               href="https://twitter.com/SaulSandovalM"
