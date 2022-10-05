@@ -2,13 +2,13 @@ import React from "react";
 import {
   Box,
   Card,
-  CardActions,
-  CardContent,
+  // CardActions,
+  // CardContent,
   CardMedia,
   Chip,
   Divider,
   Grid,
-  IconButton,
+  // IconButton,
   List,
   ListItem,
   ListItemButton,
@@ -16,12 +16,12 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LanguageIcon from "@mui/icons-material/Language";
+// import GitHubIcon from "@mui/icons-material/GitHub";
+// import LanguageIcon from "@mui/icons-material/Language";
 import Yo from "../assets/yo.jpg";
 import unity from "../assets/unity.jpg";
 import react from "../assets/react.png";
-import firebase from "../assets/firebase.png";
+// import firebase from "../assets/firebase.png";
 import android from "../assets/android.png";
 
 export default function Home() {
@@ -175,7 +175,7 @@ export default function Home() {
             Desarrollo con React, React Native, Firebase, UX.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={6} lg={6} sx={{ mt: 10 }}>
+        {/* <Grid item xs={12} md={6} lg={6} sx={{ mt: 10 }}>
           <Typography variant="h3" color="white">
             Proyectos
           </Typography>
@@ -300,7 +300,7 @@ export default function Home() {
               </IconButton>
             </CardActions>
           </Card>
-        </Grid>
+        </Grid> */}
         <Grid item xs={12} md={6} lg={6} sx={{ mt: 10 }}>
           <Typography variant="h3" color="white">
             Certificaciones
