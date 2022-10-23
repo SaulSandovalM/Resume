@@ -2,13 +2,13 @@ import React from "react";
 import {
   Box,
   Card,
-  // CardActions,
-  // CardContent,
+  CardActions,
+  CardContent,
   CardMedia,
   Chip,
   Divider,
   Grid,
-  // IconButton,
+  IconButton,
   List,
   ListItem,
   ListItemButton,
@@ -16,11 +16,12 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
-// import GitHubIcon from "@mui/icons-material/GitHub";
-// import LanguageIcon from "@mui/icons-material/Language";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
 import Yo from "../assets/yo.jpg";
 import unity from "../assets/unity.jpg";
 import react from "../assets/react.png";
+import instagram from "../assets/instagram.jpg";
 // import firebase from "../assets/firebase.png";
 import android from "../assets/android.png";
 
@@ -43,8 +44,8 @@ export default function Home() {
             Bienvenido a mi Perfil!
           </Typography>
           <Typography fontSize={20} color="#c9d1d9" mt={2}>
-            Hey!, soy Saúl, Fan de las peliculas y los videojuegos, idealista,
-            hacker y el mundo es mi hogar.
+            Hey!, soy Saúl, fan de las peliculas y los videojuegos, idealista,
+            cyberpunk y el mundo es mi hogar.
           </Typography>
         </Grid>
         <Grid
@@ -175,7 +176,7 @@ export default function Home() {
             Desarrollo con React, React Native, Firebase, UX.
           </Typography>
         </Grid>
-        {/* <Grid item xs={12} md={6} lg={6} sx={{ mt: 10 }}>
+        <Grid item xs={12} md={6} lg={6} sx={{ mt: 10 }}>
           <Typography variant="h3" color="white">
             Proyectos
           </Typography>
@@ -192,77 +193,89 @@ export default function Home() {
             <Divider sx={{ background: "#c9d1d9", width: "100%" }} />
           </Box>
         </Grid>
-        <Grid item xs={12} md={6} lg={4}>
-          <Card
-            variant="outlined"
-            sx={{ height: "100%", display: "flex", flexDirection: "column" }}
-          >
-            <CardMedia component="img" height="250" image={unity} alt="unity" />
-            <CardContent
-              sx={{
-                background: "#0e1117",
-                flexGrow: 1,
-                display: "flex",
-                justifyContent: "space-between",
-                flexDirection: "column",
-              }}
+        <Grid container spacing={2} sx={{ mt: 1 }}>
+          {/* <Grid item xs={12} md={6} lg={4}>
+            <Card
+              variant="outlined"
+              sx={{ height: "100%", display: "flex", flexDirection: "column" }}
             >
-              <Typography variant="body2" color="#c9d1d9">
-                Desarrollo de videojuegos y realidad virtual usando el moto
-                multiplataforma de Unity.
-              </Typography>
-            </CardContent>
-            <CardActions
-              disableSpacing
-              sx={{
-                background: "#0e1117",
-              }}
+              <CardMedia
+                component="img"
+                height="250"
+                image={unity}
+                alt="unity"
+              />
+              <CardContent
+                sx={{
+                  background: "#0e1117",
+                  flexGrow: 1,
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                }}
+              >
+                <Typography variant="body2" color="#c9d1d9">
+                  Desarrollo de videojuegos y realidad virtual usando el moto
+                  multiplataforma de Unity.
+                </Typography>
+              </CardContent>
+              <CardActions
+                disableSpacing
+                sx={{
+                  background: "#0e1117",
+                }}
+              >
+                <IconButton href="https://github.com/SaulSandovalM/">
+                  <GitHubIcon sx={{ color: "white" }} />
+                </IconButton>
+                <IconButton href="https://github.com/SaulSandovalM/">
+                  <LanguageIcon sx={{ color: "white" }} />
+                </IconButton>
+              </CardActions>
+            </Card>
+          </Grid> */}
+          <Grid item xs={12} md={6} lg={4}>
+            <Card
+              variant="outlined"
+              sx={{ height: "100%", display: "flex", flexDirection: "column" }}
             >
-              <IconButton href="https://github.com/SaulSandovalM/">
-                <GitHubIcon sx={{ color: "white" }} />
-              </IconButton>
-              <IconButton href="https://github.com/SaulSandovalM/">
-                <LanguageIcon sx={{ color: "white" }} />
-              </IconButton>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item xs={12} md={6} lg={4}>
-          <Card
-            variant="outlined"
-            sx={{ height: "100%", display: "flex", flexDirection: "column" }}
-          >
-            <CardMedia component="img" height="250" image={react} alt="react" />
-            <CardContent
-              sx={{
-                background: "#0e1117",
-                flexGrow: 1,
-                display: "flex",
-                justifyContent: "space-between",
-                flexDirection: "column",
-              }}
-            >
-              <Typography variant="body2" color="#c9d1d9">
-                Creacion de interfaces de usuario con la libreria de React,
-                ademas de desarrollar aplicaciones moviles con React Native.
-              </Typography>
-            </CardContent>
-            <CardActions
-              disableSpacing
-              sx={{
-                background: "#0e1117",
-              }}
-            >
-              <IconButton href="https://github.com/SaulSandovalM/">
-                <GitHubIcon sx={{ color: "white" }} />
-              </IconButton>
-              <IconButton href="https://github.com/SaulSandovalM/">
-                <LanguageIcon sx={{ color: "white" }} />
-              </IconButton>
-            </CardActions>
-          </Card>
-        </Grid>
-        <Grid item xs={12} md={6} lg={4}>
+              <CardMedia
+                component="img"
+                height="250"
+                image={instagram}
+                alt="react"
+              />
+              <CardContent
+                sx={{
+                  background: "#0e1117",
+                  flexGrow: 1,
+                  display: "flex",
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                }}
+              >
+                <Typography variant="body2" color="#c9d1d9">
+                  Creación de Instagram con funciones basicas, crear
+                  publicacion, seccion de comentarios y dar me gusta a los
+                  mismos.
+                </Typography>
+              </CardContent>
+              <CardActions
+                disableSpacing
+                sx={{
+                  background: "#0e1117",
+                }}
+              >
+                <IconButton href="https://github.com/SaulSandovalM/Instagram_clone">
+                  <GitHubIcon sx={{ color: "white" }} />
+                </IconButton>
+                <IconButton href="https://saulsandovalm.github.io/Instagram_clone/">
+                  <LanguageIcon sx={{ color: "white" }} />
+                </IconButton>
+              </CardActions>
+            </Card>
+          </Grid>
+          {/* <Grid item xs={12} md={6} lg={4}>
           <Card
             variant="outlined"
             sx={{ height: "100%", display: "flex", flexDirection: "column" }}
@@ -301,6 +314,7 @@ export default function Home() {
             </CardActions>
           </Card>
         </Grid> */}
+        </Grid>
         <Grid item xs={12} md={6} lg={6} sx={{ mt: 10 }}>
           <Typography variant="h3" color="white">
             Certificaciones
