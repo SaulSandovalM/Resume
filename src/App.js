@@ -7,15 +7,19 @@ import { BrowserRouter } from "react-router-dom";
 
 export default function App() {
   return (
-    <BrowserRouter>
-      <Nav />
-      <Toolbar />
-      <Box sx={{ background: "#0e1117" }}>
+    <Box sx={{ background: "#0e1117" }}>
+      <BrowserRouter>
+        <Nav />
+        <Toolbar />
+        <Box sx={{ minHeight: "82.7vh" }}>
+          <Container>
+            <Router />
+          </Container>
+        </Box>
         <Container>
-          <Router />
           <Footer />
         </Container>
-      </Box>
-    </BrowserRouter>
+      </BrowserRouter>
+    </Box>
   );
 }

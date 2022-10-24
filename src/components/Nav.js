@@ -35,44 +35,12 @@ export default function Nav(props) {
       </Link>
       <Divider />
       <List>
-        {/* <ListItem disablePadding>
-          <ListItemButton
-            href="https://www.youtube.com/channel/UCrwAka8IMVy1G5-3vM6dFjw"
-            sx={{ textDecoration: "none", textAlign: "center" }}
-          >
-            <ListItemText primary="Youtube" />
-          </ListItemButton>
-        </ListItem> */}
         <ListItem disablePadding>
           <ListItemButton
-            href="https://www.facebook.com/SaulSandovalM"
+            href="/cursos"
             sx={{ textDecoration: "none", textAlign: "center" }}
           >
-            <ListItemText primary="Facebook" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton
-            href="https://www.instagram.com/saulsandovalm/"
-            sx={{ textDecoration: "none", textAlign: "center" }}
-          >
-            <ListItemText primary="Instagram" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton
-            href="https://twitter.com/SaulSandovalM"
-            sx={{ textDecoration: "none", textAlign: "center" }}
-          >
-            <ListItemText primary="Twitter" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton
-            href="https://github.com/SaulSandovalM"
-            sx={{ textDecoration: "none", textAlign: "center" }}
-          >
-            <ListItemText primary="GitHub" />
+            <ListItemText primary="Cursos" />
           </ListItemButton>
         </ListItem>
       </List>
@@ -84,7 +52,7 @@ export default function Nav(props) {
 
   return (
     <Fragment>
-      <AppBar sx={{ background: "#161b22" }} component="nav">
+      <AppBar sx={{ background: "#161b22", zIndex: 1 }} component="nav">
         <Toolbar>
           <IconButton
             color="inherit"
@@ -97,49 +65,20 @@ export default function Nav(props) {
           </IconButton>
           <Typography
             variant="h6"
-            component="div"
-            sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
+            component={Link}
+            to="/"
+            sx={{
+              flexGrow: 1,
+              display: { xs: "none", sm: "block" },
+              textDecoration: "none",
+              color: "white",
+            }}
           >
             Saul Sandoval
           </Typography>
-          {/* <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Button
-              href="https://www.youtube.com/channel/UCrwAka8IMVy1G5-3vM6dFjw"
-              sx={{ color: "#fff" }}
-            >
-              Youtube
-            </Button>
-          </Box> */}
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Button
-              href="https://www.facebook.com/SaulSandovalM"
-              sx={{ color: "#fff" }}
-            >
-              Facebook
-            </Button>
-          </Box>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Button
-              href="https://www.instagram.com/saulsandovalm/"
-              sx={{ color: "#fff" }}
-            >
-              Instagram
-            </Button>
-          </Box>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Button
-              href="https://twitter.com/SaulSandovalM"
-              sx={{ color: "#fff" }}
-            >
-              Twitter
-            </Button>
-          </Box>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Button
-              href="https://github.com/SaulSandovalM"
-              sx={{ color: "#fff" }}
-            >
-              GitHub
+            <Button href="/cursos" sx={{ color: "#fff" }}>
+              Cursos
             </Button>
           </Box>
         </Toolbar>
