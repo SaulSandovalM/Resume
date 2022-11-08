@@ -271,7 +271,7 @@ export default function Home() {
               <IconButton href="https://github.com/SaulSandovalM/Instagram_clone">
                 <GitHubIcon sx={{ color: "white" }} />
               </IconButton>
-              <IconButton href="https://saulsandovalm.github.io/Instagram_clone/">
+              <IconButton href="https://saulsandovalm.github.io/Instagram-clone/">
                 <LanguageIcon sx={{ color: "white" }} />
               </IconButton>
             </CardActions>
