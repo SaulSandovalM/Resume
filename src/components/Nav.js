@@ -5,12 +5,7 @@ import {
   Typography,
   Box,
   IconButton,
-  Button,
   Divider,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
   Drawer,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -34,7 +29,7 @@ export default function Nav(props) {
         </Typography>
       </Link>
       <Divider />
-      <List>
+      {/* <List>
         <ListItem disablePadding>
           <ListItemButton
             href="/cursos"
@@ -43,7 +38,7 @@ export default function Nav(props) {
             <ListItemText primary="Cursos" />
           </ListItemButton>
         </ListItem>
-      </List>
+      </List> */}
     </Box>
   );
 
@@ -76,11 +71,11 @@ export default function Nav(props) {
           >
             Saul Sandoval
           </Typography>
-          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+          {/* <Box sx={{ display: { xs: "none", sm: "block" } }}>
             <Button href="/cursos" sx={{ color: "#fff" }}>
               Cursos
             </Button>
-          </Box>
+          </Box> */}
         </Toolbar>
       </AppBar>
       <Box component="nav">
