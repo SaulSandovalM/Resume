@@ -30,10 +30,6 @@ import instagram from "../assets/instagram.jpg";
 import android from "../assets/android.png";
 
 export default function Home() {
-  useEffect(() => {
-    (window.adsbygoogle = window.adsbygoogle || []).push({});
-  }, []);
-
   return (
     <Grid container spacing={2} sx={{ pt: 10 }}>
       <Grid
@@ -421,14 +417,6 @@ export default function Home() {
           Pachuca de Soto, Hidalgo
         </Typography>
       </Grid>
-      <ins
-        class="adsbygoogle"
-        style={{ display: "block" }}
-        data-ad-client="ca-pub-4297282347356771"
-        data-ad-slot="1893541374"
-        data-ad-format="auto"
-        data-full-width-responsive="true"
-      ></ins>
     </Grid>
   );
 }
