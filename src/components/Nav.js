@@ -7,9 +7,16 @@ import {
   IconButton,
   Divider,
   Drawer,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
+  Button,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { UserAuth } from "../context/AuthContext";
 
 const drawerWidth = 240;
 
@@ -29,21 +36,34 @@ export default function Nav(props) {
         </Typography>
       </Link>
       <Divider />
-      {/* <List>
+      <List>
         <ListItem disablePadding>
           <ListItemButton
-            href="/cursos"
+            href="/blog"
             sx={{ textDecoration: "none", textAlign: "center" }}
           >
-            <ListItemText primary="Cursos" />
+            <ListItemText primary="Blog" />
           </ListItemButton>
         </ListItem>
-      </List> */}
+      </List>
     </Box>
   );
 
   const container =
     window !== undefined ? () => window().document.body : undefined;
+
+  const { user, logout } = UserAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+      navigate("/");
+      console.log("You are logged out");
+    } catch (e) {
+      console.log(e.message);
+    }
+  };
 
   return (
     <Fragment>
@@ -71,11 +91,16 @@ export default function Nav(props) {
           >
             Saul Sandoval
           </Typography>
-          {/* <Box sx={{ display: { xs: "none", sm: "block" } }}>
-            <Button href="/cursos" sx={{ color: "#fff" }}>
-              Cursos
+          <Box sx={{ display: { xs: "none", sm: "block" } }}>
+            <Button href="/blog" sx={{ color: "#fff" }}>
+              Blog
             </Button>
-          </Box> */}
+          </Box>
+          {user && (
+            <Box sx={{ display: { xs: "none", sm: "block" } }}>
+              <Button onClick={handleLogout}>logout</Button>
+            </Box>
+          )}
         </Toolbar>
       </AppBar>
       <Box component="nav">
