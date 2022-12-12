@@ -15,8 +15,8 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link } from "react-router-dom";
-import { useNavigate } from "react-router-dom";
-import { UserAuth } from "../context/AuthContext";
+// import { useNavigate } from "react-router-dom";
+// import { UserAuth } from "../context/AuthContext";
 
 const drawerWidth = 240;
 
@@ -52,18 +52,18 @@ export default function Nav(props) {
   const container =
     window !== undefined ? () => window().document.body : undefined;
 
-  const { user, logout } = UserAuth();
-  const navigate = useNavigate();
+  // const { user, logout } = UserAuth();
+  // const navigate = useNavigate();
 
-  const handleLogout = async () => {
-    try {
-      await logout();
-      navigate("/");
-      console.log("You are logged out");
-    } catch (e) {
-      console.log(e.message);
-    }
-  };
+  // const handleLogout = async () => {
+  //   try {
+  //     await logout();
+  //     navigate("/");
+  //     console.log("You are logged out");
+  //   } catch (e) {
+  //     console.log(e.message);
+  //   }
+  // };
 
   return (
     <Fragment>
@@ -96,11 +96,11 @@ export default function Nav(props) {
               Blog
             </Button>
           </Box>
-          {user && (
+          {/* {user && (
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               <Button onClick={handleLogout}>logout</Button>
             </Box>
-          )}
+          )} */}
         </Toolbar>
       </AppBar>
       <Box component="nav">
