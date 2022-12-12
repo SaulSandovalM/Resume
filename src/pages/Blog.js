@@ -13,6 +13,7 @@ import {
 } from "@mui/material";
 import { collection, onSnapshot, orderBy, query } from "firebase/firestore";
 import { db } from "../Firebase";
+import { Helmet } from "react-helmet";
 
 export default function Blog() {
   const [articles, setArticles] = useState([]);
@@ -45,6 +46,13 @@ export default function Blog() {
 
   return (
     <Container>
+      <Helmet>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4297282347356771"
+          crossorigin="anonymous"
+        ></script>
+      </Helmet>
       <Grid container spacing={2} sx={{ pt: 10 }}>
         {/* <Grid item xs={12}>
           <Card
