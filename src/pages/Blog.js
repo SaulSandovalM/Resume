@@ -148,7 +148,7 @@ export default function Blog() {
         </Grid>
         {articles.map((item, id) => (
           <Grid item xs={12} md={4} lg={4} key={id}>
-            <Link href={`/articulo/${item.id}`}>
+            <Link href={`/articulo/${item.id}`} sx={{ textDecoration: "none" }}>
               <Card
                 variant="outlined"
                 sx={{
